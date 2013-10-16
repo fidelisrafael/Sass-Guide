@@ -1,11 +1,125 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
   <title>Sass Guide - O guia básico de Sass em português</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <link rel="stylesheet" type="text/css" href="assets/public/stylesheets/main.css"/>
 </head>
 <body>
+  <div class="container">
+    <div class="row">
+      <header id="header">
+        <div class="span12">
+          <div class="info">
+            <h1 class="name">Sass Guide</h1>
+            <h4 class="description">O guia básico de Sass em português</h4>
+          </div>
+          <div class="intro">
+            <h4>Antes que você possa usar Sass, você precisa configurá-lo em seu projeto. Se você quiser apenas consultar aqui, vá em frente, mas nós recomendamos que você instale o Sass primeiro. Clique <a href="#">aqui</a> se você quiser saber tudo sobre a configuração.</h4>
+          </div>
+        </div>
+        <div class="span12">
+          <nav>
+            <ul class="nav">
+              <li><a href="#pre-processing">Pré-processamento</a></li>
+              <li><a href="#variables">Variáveis</a></li>
+              <li><a href="#nesting">Aninhamento</a></li>
+              <li><a href="#partials">Fragmentos</a></li>
+              <li><a href="#import">Importar</a></li>
+              <li><a href="#mixins">Comportamentos</a></li>
+              <li><a href="#extend-inheritance">Extender/Herança</a></li>
+              <li><a href="#operators">Operadores</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="span12">
+        <article class="pre-processing" id="pre-processing">
+          <h1>Pré-processamento <small>(Pre-processing)</small></h1>
+          <p>CSS por conta própria pode ser divertido, mas folhas de estilo estão ficando maiores, mais complexas e mais difíceis de manter. Este é o lugar onde um pré-processador pode ajudar. Sass permite que você use recursos que não existem em CSS ainda como variáveis​​, aninhamento, mixins, herança e outras coisas bacanas que tornam divertido escrever CSS novamente.
+          Uma vez que você começar a mexer com Sass, terá o seu arquivo Sass(scss) pré processado e salvo como um arquivo CSS normal que você pode usar em seu web site.</p>
+        </article>
+        <hr>
+        <article class="variables" id="variables">
+          <h1>Variáveis <small>(Variables)</small></h1>
+          <p>Pense em variáveis ​​como uma maneira de armazenar informações que você deseja reutilizar todo o seu estilo. Você pode armazenar coisas como cores, fontes ou qualquer valor CSS você acha que vai querer reutilizar. Sass usa o símbolo <code>$</code> para transformar algo de uma variável. Aqui está um exemplo:</p>
+          <script src="https://gist.github.com/ribeiroevandro/39619a6b3896dade2041.js"></script>
+          <p>Quando o Sass é processado, ele leva as variáveis ​​que definem a <code>$font-stack</code>, <code>$primary-color</code> e as saídas CSS normais. Isto pode ser extremamente potente quando se trabalha com cores definidas e deseja-se mantê-las consistentes em todo local.</p>
+          <script src="https://gist.github.com/ribeiroevandro/0c0fd9a4bac6d9213965.js"></script>
+        </article>
+        <hr>
+        <article class="nesting" id="nesting">
+          <h1>Aninhamento <small>(Nesting)</small></h1>
+          <p>Quando você escreve o HTML já deve ter notado que ele possui um aninhamento, uma hierarquia visual bastante clara. CSS, por outro lado, não oferece isso. Sass vai proporcionar que você aninhe seus seletores CSS de uma maneira que segue a mesma hierarquia visual do seu HTML. Aqui está um exemplo de alguns estilos típicos para uma navegação:</p>
+          <script src="https://gist.github.com/ribeiroevandro/a9e7815544ad1a01796d.js"></script>
+          <p>Você notará que o <code>ul</code>, <code>li</code>, e <code>a</code> são aninhados dentro do selector <code>nav</code>. Esta é uma ótima maneira de organizar o seu CSS e torná-lo mais legível. Quando você gerar o CSS você terá algo parecido com isto:</p>
+          <script src="https://gist.github.com/ribeiroevandro/2630ea4bdd8772b0b735.js"></script>
+        </article>
+        <hr>
+        <article class="partials" id="partials">
+          <h1>Fragmentos <small>(Partials)</small></h1>
+            <p>Você pode criar arquivos Sass parciais que contêm pequenos trechos de CSS que você pode incluir em outros arquivos Sass. Esta é uma ótima maneira de modularizar seu CSS e ajudar a manter as coisas mais fáceis de gerenciar. A parcial é simplesmente um arquivo Sass nomeado com um sublinhado. Você pode nomeá-lo algo como <code>_partial.scss</code>. O sublinhado permite Sass sabe que o arquivo é apenas um arquivo parcial e que deve ser gerado em um arquivo CSS. Sass parciais são usados ​​com a diretiva <code>@import</code>.</p>
+        </article>
+        <hr>
+        <article class="import" id="import">
+          <h1>Importar <small>(Import)</small></h1>
+            <p>CSS tem uma opção de importação que permite dividir seu CSS em partes menores. O único inconveniente é que cada vez que você usa <code>@import</code> no CSS ele cria um outro pedido HTTP. Sass constrói em cima do atual CSS, mas em vez de exigir uma nova solicitação HTTP, Sass irá importar o arquivo e combiná-lo com o arquivo principal para que você possa servir a um único arquivo CSS para o navegador da web.</p>
+            <p>Digamos que você tem dois arquivos de Sass, <code>reset.scss</code> e <code>base.scss</code>. E quer importar <code>reset.scss</code> em <code>base.scss</code>.</p>
+            <script src="https://gist.github.com/ribeiroevandro/d3f9f1cfa0ea9a395c0e.js"></script>
+            <script src="https://gist.github.com/ribeiroevandro/2654815d17d737221037.js"></script>
+            <p>Observe que estamos usando <code>@import 'reset';</code> no arquivo <code>base.scss</code>. Quando você importa um arquivo não precisa declarar a extensão <code>.scss</code>. O Sass já identifica e completa isso para você. Quando você gerar o CSS você vai ter:</p>
+            <script src="https://gist.github.com/ribeiroevandro/b7d161773cfc8f0396ef.js"></script>
+        </article>
+        <hr>
+        <article class="mixins" id="mixins">
+          <h1>Comportamentos <small>(Mixins)</small></h1>
+            <p>Algumas coisas em CSS se tornam um pouco tediósas para escrever, especialmente com CSS3 e os muitos prefixos dos navegadores que existem. Um mixin permite fazer grupos de declarações CSS que você deseja reutilizar todo o site. Você pode até mesmo passar valores para fazer seu mixin ficar mais flexível. Um bom uso de um mixin é para prefixos de fornecedores. Aqui está um exemplo para <code>border-radius</code>.</p>
+            <script src="https://gist.github.com/ribeiroevandro/155548e1a1f572ff96b7.js"></script>
+            <p>Para criar um mixin você usa a diretiva <code>@mixin</code> e dando-lhe um nome. Nomeamos o mixin como <code>border-radius</code>. Também estamos usando a variável <code>$radius</code> dentro do parêntese, para que possamos passar todas as definiçoes do radius que nós queremos. Depois de criar seu mixin, então você pode usá-lo como uma declaração CSS começando com <code>@include</code> seguido pelo nome do mixin. Quando o seu CSS é gerado ele vai ficar assim:</p>
+            <script src="https://gist.github.com/ribeiroevandro/0d5385f5595a9085ee16.js"></script>
+        </article>
+        <hr>
+        <article class="extend-inheritance" id="extend-inheritance">
+          <h1>Estender/Herança <small>(Extend/Inheritance)</small></h1>
+            <p>Este é um dos recursos mais úteis do Sass. Usando <code>@extend</code> permite compartilhar um conjunto de propriedades CSS de um seletor para outro. Ela ajuda a manter o seu Sass modular e organizado. No exemplo vamos criar uma simples série de mensagens de erros, avisos e sucessos.</p>
+            <script src="https://gist.github.com/ribeiroevandro/d8b93f8f4fa725dc02da.js"></script>
+            <p>O que o código acima faz é permitir que você use as propriedades CSS de .message e reutilizar em <code>.success</code>, <code>.error</code> & <code>.warning</code>, a magia acontece com o CSS gerado, e isso ajuda a evitar ter que escrever vários nomes de classes em elementos HTML. Isto é o que parece:</p>
+            <script src="https://gist.github.com/ribeiroevandro/76d92b79e047ce3809b3.js"></script>
+        </article>
+        <hr>
+        <article class="operators" id="operators">
+          <h1>Operadores <small>(Operators)</small></h1>
+          <p>Fazer oprações matemáticas em CSS é muito útil. Sass tem um punhado de operadores matemáticos padrão como <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> e <code>%</code>. No exemplo, vamos fazer algumas contas simples para calcular as larguras de um <code>aside</code> e um <code>article</code>.</p>
+          <script src="https://gist.github.com/ribeiroevandro/5af1be148e6f808d7ad1.js"></script>
+          <p>Criamos um grid fluído muito simples, baseado em 960px. Usando operadores em Sass fizemos algo como pegar valores em pixel e convertê-los em porcentagens sem muita dificuldade. O CSS gerado será algo como:</p>
+          <script src="https://gist.github.com/ribeiroevandro/2cfedfa189bd7253bad2.js"></script>
+        </article>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="span12">
+        <footer id="footer">
+          <p>Desenvolvido por: <a href="http://ribeiroevandro.github.io" target="_blank">Evandro Ribeiro</a>.</p>
+          <p>Revisado por: <a href="http://www.visualcode.com.br/" target="_blank">Aldo Camacho</a>, <a href="https://twitter.com/Japaloc" target="_blank">Kaique Silva</a> e <a href="http://neysimoes.com.br" target="_black">Ney Simões</a>.</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-44901213-1', 'pre-processadores.github.io');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>

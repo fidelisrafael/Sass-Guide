@@ -1,0 +1,55 @@
+
+/*!
+ * -------------------------------------------------------
+ * Project: Sass-Guide
+ * Version: 0.0.1
+ *
+ * Author:  Evandro Ribeiro
+ * Site:    http://ribeiroevandro.github.io
+ * Twitter: @ribeiroevandro
+ * Contact: ribeiroevandro[at]live.com
+ *
+ *
+ * Copyright (c) 2013 Evandro Ribeiro
+ * -------------------------------------------------------
+ */
+
+@charset "UTF-8";
+
+@import "compass";
+@import "defaults";
+@import "variables";
+
+@import "modules/resets";
+@import "modules/scaffolding";
+@import "modules/grid";
+@import "modules/responsive";
+
+
+
+// Test Page
+// --------------------------------------------------
+
+$family: unquote("Open+Sans");
+@import url("http://fonts.googleapis.com/css?family=#{$family}:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+
+#header {
+  text-align: center;
+}
+.nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline;
+
+  li {
+    display: inline;
+    border-left: 1px solid #eee;
+    padding: 0 5px 0 5px;
+
+    &:first-child {
+      border: 0;
+      padding: 0 5px 0 0;
+    }
+  }
+}

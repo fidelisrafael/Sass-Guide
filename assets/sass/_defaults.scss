@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////
+//
+// INITIAL CONFIGURATION
+//
+////////////////////////////////////////////////////////////////////
+
+// 1 - Pick a reset or normalization - Accepted values: "meyer", "normalize" (default) or custom
+$use-reset: "normalize";
+
+// 2 - Would you like to use grid system classes?
+$use-grids: true;
+
+// 3 - Pick a type of grid - Accepted values: "fluid", "static"
+$use-grid-type: "fluid";
+
+// 4 - Would you like to use media queries?
+$use-responsive: true;
+
+// 5 - Would you like to use border-box? - It's highly recommended to use it!
+$use-border-box: true;
+
+// 6 - Would you like to use legacy support?
+$legacy-support: true;
+
+
+
+
+////////////////////////////////////////////////////////////////////
+//
+// GRID SYSTEM CONFIGURATION
+//
+////////////////////////////////////////////////////////////////////
+
+// Set the number of columns, column and gutter widths
+$column-width: 60px;
+$gutter-width: 20px;
+$columns: 12;
+
+// Use max-width for your container
+$use-max-width: true;
+$max-width: 960px; // Set your max-width value
+
+// Use padding-left and padding-right on your container
+$use-container-gutter: true;
+$container-gutter: 20px; // Set a custom value for the padding
+
+// Enable sub-pixel fix for IE6 & 7.
+// Set $legacy-support to TRUE on _defaults.scss
+// See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
+$min-width: 999999;
+$correction: 0.5 / $min-width * 100;
+
+// Use the offset options in your grid - push, pull, squish and centered
+$use-offset: true;
+
+// Set your helper classes
+$class-container:   'container';
+$class-row:         'row';
+$class-column:      'span';
+$class-push:        'push';
+$class-pull:        'pull';
+$class-squish:      'squish';
+
+
+
+
+////////////////////////////////////////////////////////////////////
+//
+// RESPONSIVE CONFIGURATION
+//
+////////////////////////////////////////////////////////////////////
+
+// Set your breakpoints
+$tvscreen: 1441px;
+$desktop:  979px;
+$tablet:   768px;
+$mobile:   767px;

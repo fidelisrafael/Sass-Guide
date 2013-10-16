@@ -1,0 +1,50 @@
+////////////////////////////////////////////////////////////////////
+//
+// CORE SETTINGS - USED IN TEST PAGE
+//
+////////////////////////////////////////////////////////////////////
+
+
+$black:                 #000000                 !default;
+$gray:                  #555555                 !default;
+$white:                 #ffffff                 !default;
+$gray-dark:             #333333                 !default;
+$gray-light:            #bbbbbb                 !default;
+$gray-darker:           #222222                 !default;
+$gray-lighter:          #eeeeee                 !default;
+
+$background-color:      $white      !default;
+$text-color:            $gray-dark  !default;
+
+$link-color:            #b37399                     !default;
+$link-color-hover:      darken($link-color, 15%)    !default;
+$link-color-focus:      $link-color-hover           !default;
+$link-color-active:     $link-color-hover           !default;
+$link-color-visited:    $link-color                 !default;
+
+$sans-font-family:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-font-family:       Georgia, "Times New Roman", Times, serif;
+$mono-font-family:        Monaco, Menlo, Consolas, "Courier New", monospace;
+$custom-font-family:      "Open Sans", sans-serif;
+
+$base-font-family:        $custom-font-family;
+$base-font-size:          14px;
+$base-line-height:        20px                  !default;
+$alt-font-family:         $serif-font-family    !default;
+
+$headings-font-family:    inherit   !default;
+$headings-font-weight:    normal    !default;
+$headings-color:          inherit   !default;
+
+$font-size-large:         $base-font-size * 1.25; // ~18px
+$font-size-small:         $base-font-size * 0.85; // ~12px
+$font-size-mini:          $base-font-size * 0.75; // ~11px
+
+$base-border-radius:      5px !default;
+
+$table-background:               transparent                !default; // overall background-color
+$table-background-accent:        #f9f9f9                    !default; // for striping
+$table-background-hover:         #f5f5f5                    !default; // for hover
+$table-border:                   #ddd                       !default; // table and cell border
+
+$hr-border:               $gray-lighter !default;
