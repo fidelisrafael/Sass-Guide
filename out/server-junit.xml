@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite>
+<testcase classname="dev.js.main" name="main:1:17">
+  <failure message="'sassGuide' used out of scope." />
+</testcase>
+<testcase classname="dev.js.main" name="main:10:5">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:10:7">
+  <failure message="'window' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:11:13">
+  <failure message="'isScrolledIntoView' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:12:13">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:14:13">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:16:13">
+  <failure message="'isScrolledIntoView' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:17:13">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:18:13">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:20:17">
+  <failure message="'isScrolledIntoView' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:21:17">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:22:17">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:24:21">
+  <failure message="'isScrolledIntoView' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:25:21">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:26:21">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:28:25">
+  <failure message="'isScrolledIntoView' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:29:25">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:30:25">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:32:29">
+  <failure message="'isScrolledIntoView' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:33:29">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+<testcase classname="dev.js.main" name="main:34:29">
+  <failure message="'$' was used before it was defined." />
+</testcase>
+  </testsuite>
+</testsuites>

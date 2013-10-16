@@ -1,0 +1,26 @@
+{
+  "name": "Sass-Guide",
+  "version": "0.0.0",
+  "description": "Guia de SASS em português",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pre-processadores/Sass-Guide"
+  },
+  "author": "Evandro Ribeiro",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/pre-processadores/Sass-Guide/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-jslint": "~1.1.1",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
