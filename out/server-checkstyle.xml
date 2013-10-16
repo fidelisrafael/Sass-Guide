@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle>
+<file name="dev/js/main.js">
+<error line="1" column="17" severity="warning" message="'sassGuide' used out of scope." source="com.jslint"/>
+<error line="10" column="5" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="10" column="7" severity="warning" message="'window' was used before it was defined." source="com.jslint"/>
+<error line="11" column="13" severity="warning" message="'isScrolledIntoView' was used before it was defined." source="com.jslint"/>
+<error line="12" column="13" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="14" column="13" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="16" column="13" severity="warning" message="'isScrolledIntoView' was used before it was defined." source="com.jslint"/>
+<error line="17" column="13" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="18" column="13" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="20" column="17" severity="warning" message="'isScrolledIntoView' was used before it was defined." source="com.jslint"/>
+<error line="21" column="17" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="22" column="17" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="24" column="21" severity="warning" message="'isScrolledIntoView' was used before it was defined." source="com.jslint"/>
+<error line="25" column="21" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="26" column="21" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="28" column="25" severity="warning" message="'isScrolledIntoView' was used before it was defined." source="com.jslint"/>
+<error line="29" column="25" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="30" column="25" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="32" column="29" severity="warning" message="'isScrolledIntoView' was used before it was defined." source="com.jslint"/>
+<error line="33" column="29" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+<error line="34" column="29" severity="warning" message="'$' was used before it was defined." source="com.jslint"/>
+</file>
+</checkstyle>

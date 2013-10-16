@@ -1,0 +1,24 @@
+FAIL	dev/js/main.js (21)
+dev/js/main.js:1:17	'sassGuide' used out of scope.
+dev/js/main.js:10:5	'$' was used before it was defined.
+dev/js/main.js:10:7	'window' was used before it was defined.
+dev/js/main.js:11:13	'isScrolledIntoView' was used before it was defined.
+dev/js/main.js:12:13	'$' was used before it was defined.
+dev/js/main.js:14:13	'$' was used before it was defined.
+dev/js/main.js:16:13	'isScrolledIntoView' was used before it was defined.
+dev/js/main.js:17:13	'$' was used before it was defined.
+dev/js/main.js:18:13	'$' was used before it was defined.
+dev/js/main.js:20:17	'isScrolledIntoView' was used before it was defined.
+dev/js/main.js:21:17	'$' was used before it was defined.
+dev/js/main.js:22:17	'$' was used before it was defined.
+dev/js/main.js:24:21	'isScrolledIntoView' was used before it was defined.
+dev/js/main.js:25:21	'$' was used before it was defined.
+dev/js/main.js:26:21	'$' was used before it was defined.
+dev/js/main.js:28:25	'isScrolledIntoView' was used before it was defined.
+dev/js/main.js:29:25	'$' was used before it was defined.
+dev/js/main.js:30:25	'$' was used before it was defined.
+dev/js/main.js:32:29	'isScrolledIntoView' was used before it was defined.
+dev/js/main.js:33:29	'$' was used before it was defined.
+dev/js/main.js:34:29	'$' was used before it was defined.
+
+# JSLint failed, 21 violations in 1.  1 files scanned.

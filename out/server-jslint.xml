@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jslint>
+<file name="dev/js/main.js">
+<issue line="1" char="17" reason="'sassGuide' used out of scope." evidence="var sassGuide = sassGuide || {};"/>
+<issue line="10" char="5" reason="'$' was used before it was defined." evidence="    $(window).scroll(function () {"/>
+<issue line="10" char="7" reason="'window' was used before it was defined." evidence="    $(window).scroll(function () {"/>
+<issue line="11" char="13" reason="'isScrolledIntoView' was used before it was defined." evidence="        if (isScrolledIntoView(&quot;#fixNav&quot;)) {"/>
+<issue line="12" char="13" reason="'$' was used before it was defined." evidence="            $(&quot;.submenu&quot;).removeClass(&quot;fixed&quot;);"/>
+<issue line="14" char="13" reason="'$' was used before it was defined." evidence="            $(&quot;.submenu&quot;).addClass(&quot;fixed&quot;);"/>
+<issue line="16" char="13" reason="'isScrolledIntoView' was used before it was defined." evidence="        if (isScrolledIntoView(&quot;#bloco-1&quot;)) {"/>
+<issue line="17" char="13" reason="'$' was used before it was defined." evidence="            $(&quot;.submenu a[href^='#']&quot;).removeClass(&quot;current&quot;);"/>
+<issue line="18" char="13" reason="'$' was used before it was defined." evidence="            $(&quot;#la1&quot;).addClass(&quot;current&quot;);"/>
+<issue line="20" char="17" reason="'isScrolledIntoView' was used before it was defined." evidence="            if (isScrolledIntoView(&quot;#bloco-2&quot;)) {"/>
+<issue line="21" char="17" reason="'$' was used before it was defined." evidence="                $(&quot;.submenu a[href^='#']&quot;).removeClass(&quot;current&quot;);"/>
+<issue line="22" char="17" reason="'$' was used before it was defined." evidence="                $(&quot;#la2&quot;).addClass(&quot;current&quot;);"/>
+<issue line="24" char="21" reason="'isScrolledIntoView' was used before it was defined." evidence="                if (isScrolledIntoView(&quot;#bloco-3&quot;)) {"/>
+<issue line="25" char="21" reason="'$' was used before it was defined." evidence="                    $(&quot;.submenu a[href^='#']&quot;).removeClass(&quot;current&quot;);"/>
+<issue line="26" char="21" reason="'$' was used before it was defined." evidence="                    $(&quot;#la3&quot;).addClass(&quot;current&quot;);"/>
+<issue line="28" char="25" reason="'isScrolledIntoView' was used before it was defined." evidence="                    if (isScrolledIntoView(&quot;#bloco-4&quot;)) {"/>
+<issue line="29" char="25" reason="'$' was used before it was defined." evidence="                        $(&quot;.submenu a[href^='#']&quot;).removeClass(&quot;current&quot;);"/>
+<issue line="30" char="25" reason="'$' was used before it was defined." evidence="                        $(&quot;#la4&quot;).addClass(&quot;current&quot;);"/>
+<issue line="32" char="29" reason="'isScrolledIntoView' was used before it was defined." evidence="                        if (isScrolledIntoView(&quot;#bloco-5&quot;)) {"/>
+<issue line="33" char="29" reason="'$' was used before it was defined." evidence="                            $(&quot;.submenu a[href^='#']&quot;).removeClass(&quot;current&quot;);"/>
+<issue line="34" char="29" reason="'$' was used before it was defined." evidence="                            $(&quot;#la5&quot;).addClass(&quot;current&quot;);"/>
+</file>
+</jslint>
